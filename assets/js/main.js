@@ -16,3 +16,13 @@ const observer = new IntersectionObserver(entries => {
 sections.forEach(section => {
     observer.observe(section)
 })
+
+
+//Navigation 
+const bodyTag = document.querySelector("body")
+const menuToggle = document.querySelector("a.menu-toggle")
+const menuToggleText = menuToggle.querySelector("span")
+
+menuToggle.addEventListener("click", function () {
+    bodyTag.classList.toggle("nav-open")
+})
