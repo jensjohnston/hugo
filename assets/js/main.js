@@ -25,4 +25,14 @@ const menuToggleText = menuToggle.querySelector("span")
 
 menuToggle.addEventListener("click", function () {
     bodyTag.classList.toggle("nav-open")
+
+    if (bodyTag.classList.contains("nav-open")) {
+        menuToggleText.innerHTML = "Close"
+
+        gsap.to(".burger-top", { rotation: 45 })
+    } else {
+        menuToggleText.innerHTML = "Menu"
+    }
+
+
 })
