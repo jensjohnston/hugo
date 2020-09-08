@@ -3,7 +3,7 @@
     --black-color: #000000;
 }
 
-@keyframes show {
+/* @keyframes show {
     0% {
         opacity: 0;
         transform: translate(0, 24px) scale(0.95);
@@ -17,13 +17,69 @@
     }
 }
 
+@keyframes show-arrow {
+    0% {
+        opacity: 0;
+        transform: translate(0, 24px) scale(1);
+        clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0) scale(2);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+} */
+
+@keyframes show-hamburger {
+    0% {
+        opacity: 0;
+        transform: translate(0, 24px);
+        clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
+
+@keyframes intro-box {
+    0% {
+        background-color: var(--black-color);
+    }
+
+    80% {
+        background-color: var(--black-color);
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes fade-intro {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%
+    }
+}
+
 
 body {
     font-family: 'Work Sans', sans-serif;
     font-size: 20px;
     line-height: 1.4;
 
-    background-color: #333333;
+    background-color: var(--black-color);
     color: #ffffff;
 
 }
@@ -58,7 +114,7 @@ div.intro {
     display: flex;
     top:0;
     left: 0;
-    z-index: 10;
+    z-index: 120;
 }
 
 section {
@@ -109,7 +165,7 @@ figcaption {
 
 @media (prefers-reduced-motion: no-preference) {
     section.in-view img{
-        animation: show 2s 0s  both cubic-bezier(0.68,-0.55,0.27,1.55);   
+        animation: show 2s 4s  both cubic-bezier(0.68,-0.55,0.27,1.55);   
     }    
 }
 
@@ -140,6 +196,8 @@ figcaption {
   section.clients{
       display: flex;
       flex-direction: column;
+      align-items: start;
+      font-size: 36px;
   }
 
   .client-nav{
@@ -188,6 +246,7 @@ figcaption {
     align-items: center;
     text-decoration: none;
     color: var(--white-color);
+    animation: show-hamburger 2s 5s  both cubic-bezier(0.68,-0.55,0.27,1.55);  
 }
 
 
@@ -200,7 +259,7 @@ nav {
     max-width: 600px;
     height: 100%;
     background-color: var(--black-color);
-    border-left: 1px solid var(--white-color);
+    border-left: 1px dashed var(--white-color);
     z-index: 100;
     transform: translate(100%, 0);
     transition: transform 0.5s 0s; 
@@ -268,7 +327,14 @@ nav a:hover {
     /* right: 48px;  */
     text-align: center;
     transform: scale(2);
+    animation: show-arrow 2s 5s  both cubic-bezier(0.68,-0.55,0.27,1.55);  
 }
+
+.arrow a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
 
 
 svg {
@@ -280,24 +346,41 @@ svg {
 
 /*Introduction*/
 div.intro {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
 
     background-color: var(--white-color);
-    color: var(--black-color);
+    color: var(--white-color);
 
     width: 100%;
     height: 100%;
 
     pointer-events: none;
     display: flex;
+    animation: intro-box 5s both;
 }
 
-div.column {
+/* div.first-intro-caption {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    animation: fade-intro 2s 1s both;
+    font-size: 36px;
 }
  
+div.second-intro-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fade-intro 2s 3s both;
+    font-size: 36px;
+}
+
+*/
+
+.profile-picture img {
+    max-height: 70vh;
+} 
