@@ -84,17 +84,35 @@ body {
 
 }
 
+ a {
+     text-decoration: none;
+     color: var(--white-color)
+ }   
+
  h1 {
-    font-size: 120px;
+    font-size: 96px;
     letter-spacing: -1px;
 } 
 
 h2 {
-    font-size: 56px;
+    font-size: 70px;
 }
 
 h3 {
+    font-size: 48px;
+}
+
+h4 {
     font-size: 36px;
+    line-height: 1.3;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+h6 {
+    font-size: 20px;
 }
 
 p {
@@ -211,7 +229,6 @@ figcaption {
   .client-nav a {
       text-decoration: none;
       color: white; 
-      font-size: 100px;
       transition: 0.8s ease;
   }
 
@@ -227,6 +244,7 @@ figcaption {
   .mail {
       color: white; 
       transition: 0.4s;
+      text-decoration: underline;
   }
 
   .mail:hover {
@@ -384,3 +402,63 @@ div.second-intro-caption {
 .profile-picture img {
     max-height: 70vh;
 } 
+
+
+
+/*CLIENTS*/
+
+.subject {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    font-size: 20px;
+    padding: 32px
+}
+
+.clients {
+    padding: 32px
+}
+
+
+
+ul:hover a {
+    opacity: 0.3;
+    transition: 0.8s ease;
+  }
+  
+  ul a:hover {
+    opacity: 1;
+  }
+
+
+
+
+  /*IKEA*/
+
+  section.split-screen {
+    display: flex;
+    flex-direction: row;
+  }
+
+  section.split-screen div {
+      width: 50%;
+  }
+
+  section.split-screen div.client-text {
+    padding: 32px;
+}
+
+section.split-screen div.full-image {
+    height: 100vh;
+
+    position: sticky;
+    position: -webkit-sticky;
+    top:0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 10%;
+}
