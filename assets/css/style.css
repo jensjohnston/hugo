@@ -3,7 +3,7 @@
     --black-color: #000000;
 }
 
-/* @keyframes show {
+ @keyframes show {
     0% {
         opacity: 0;
         transform: translate(0, 24px) scale(0.95);
@@ -29,7 +29,7 @@
         transform: translate(0, 0) scale(2);
         clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
     }
-} */
+} 
 
 @keyframes show-hamburger {
     0% {
@@ -148,7 +148,7 @@ figcaption {
 
 
 @media (prefers-reduced-motion: no-preference) {
-    section.in-view img{
+    section.in-view .profile-picture{
         animation: show 2s 4s  both cubic-bezier(0.68,-0.55,0.27,1.55);   
     }    
 }
@@ -316,7 +316,7 @@ div.intro {
     animation: intro-box 5s both;
 }
 
-/* div.first-intro-caption {
+div.first-intro-caption {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -334,7 +334,7 @@ div.second-intro-caption {
     font-size: 36px;
 }
 
-*/
+
 
 /*INDEX*/
 

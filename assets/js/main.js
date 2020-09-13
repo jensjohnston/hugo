@@ -5,9 +5,9 @@ const observer = new IntersectionObserver(entries => {
         if (entry.intersectionRatio > 0.1) {
             entry.target.classList.add("in-view")
         }
-        else {
-            entry.target.classList.remove("in-view")
-        }
+        // else {
+        //     entry.target.classList.remove("in-view")
+        // }
     }) 
 }, {
     threshold: [0.0, 0.1, 0.7]
