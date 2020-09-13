@@ -93,73 +93,6 @@ body {
     font-style: italic;
  }
 
- h1 {
-    font-size: 96px;
-    letter-spacing: -1px;
-} 
-
-h2 {
-    font-size: 70px;
-}
-
-h3 {
-    font-size: 48px;
-}
-
-h4 {
-    font-size: 36px;
-    line-height: 1.3;
-}
-
-h5 {
-    font-size: 24px;
-}
-
-h6 {
-    font-size: 20px;
-}
-
-.h1 {
-    font-size: 96px;
-    letter-spacing: -1px;
-}
-
-.h2 {
-    font-size: 70px;
-}
-
-.h3 {
-    font-size: 48px;
-}
-
-.h4 {
-    font-size: 36px;
-    line-height: 1.3;
-}
-
-.h5 {
-    font-size: 24px;
-}
-
-.h6 {
-    font-size: 20px;
-}
-
-p {
-    font-size: 20px;
-    line-height: 1.4;
-}
-
-.bold-font {
-    font-weight: 600;
-}
-
-
-
-.hero-font {
-    font-size: 20px;
-    letter-spacing: 0.5px;
-}
 
 div.intro {
     position: fixed;
@@ -169,7 +102,7 @@ div.intro {
     z-index: 120;
 }
 
-section.full-height-section {
+/* section.full-height-section {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -180,15 +113,10 @@ section.full-height-section {
     top: 0;
     
     background-color: black;
-}
+} */
 
-section.alternate {
-    background-image: linear-gradient(30deg, #dc72ef, #fe0000);
-}
-
+/* 
 figure {
-    /* padding: 120px; */
-    /* background-color: yellow; */
     position: absolute;
     top: 0;
     left: 0;
@@ -211,7 +139,7 @@ figcaption {
     pointer-events: none;
     line-height: 1.1;
     letter-spacing: -1px;
-}
+} */
 
 
 
@@ -229,9 +157,8 @@ figcaption {
 
 
 @media (prefers-reduced-motion: no-preference) and (min-width: 900px) {
-    html, body {
+    /* html, body {
       height: 100%;
-      overflow: hidden;
     }
     
     main {
@@ -242,37 +169,9 @@ figcaption {
     
     section {
        scroll-snap-align: start; 
-    }
-  }
-  
-  section.clients{
-      display: flex;
-      flex-direction: column;
-      
-      font-size: 36px;
+    }  */
   }
 
-  .client-nav{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      text-align: left;
-  }
-
-  .client-nav a {
-      text-decoration: none;
-      color: white; 
-      transition: 0.8s ease;
-  }
-
-  .client-nav:hover a {
-      opacity: 0.3;
-  }
-
-  .clients a:hover {
-      opacity: 1;
-  }
 
 
   .mail {
@@ -433,9 +332,23 @@ div.second-intro-caption {
 
 */
 
+/*INDEX*/
+
+.hero-page {
+    height: 100vh;
+}
+
 .profile-picture img {
-    max-height: 70vh;
+    max-height: 100%;
 } 
+
+.title-hero{
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    transform: rotate(180deg);
+    padding-bottom: 23px;
+    letter-spacing: 3px;
+}
 
 
 
@@ -470,8 +383,28 @@ ul:hover a {
 
   /*IKEA*/
   section.project-description {
-      min-height: 100vh;
+     min-height: 100vh;
   }
+
+  .project-subheader {
+      letter-spacing: 0.5px;
+  }
+
+section.ikea-images{   
+min-height: 100vh;
+background-size:60vmax auto;
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+section.image1{
+    background-image: url(/assets/images/Ikea_Stable_Table_Outside.png);
+}  
+
+section.image2{
+    background-image: url(/assets/images/Ikea_Stable_Table_Raw_Camera.png);
+}  
 
 
 
@@ -509,5 +442,25 @@ ul:hover a {
         color: var(--white-color);
         animation: show-hamburger 2s 1s  both cubic-bezier(0.68,-0.55,0.27,1.55);  
     }
+
+
+
+    /*INDEX*/
+
+    .profile-picture img {
+        max-height: 100%;
+        padding: 32px;
+    } 
+
+    .hero-page {
+        min-height: 100vh;
+    }
+
+
+    /*IKEA*/
+    .project-subheader {
+        letter-spacing: 1px;
+    }
+  
 
 }
