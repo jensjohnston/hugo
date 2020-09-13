@@ -204,6 +204,10 @@ figcaption {
     animation: show-hamburger 2s 5s  both cubic-bezier(0.68,-0.55,0.27,1.55);  
 }
 
+ #secondary{
+    animation: show-hamburger 1s both cubic-bezier(0.68,-0.55,0.27,1.55);  
+}
+
 
 nav {
     padding: 48px;
