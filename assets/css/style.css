@@ -537,3 +537,6 @@ section.image2{
   
   
   
+.video {
+    max-height: 70vh;
+}
