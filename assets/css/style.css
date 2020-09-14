@@ -73,6 +73,8 @@
     }
 }
 
+
+
 @keyframes fadein {
     0% { opacity: 0 }
     100% { opacity: 1 }
@@ -331,7 +333,7 @@ div.first-intro-caption {
     left: 50%;
     transform: translate(-50%, -50%);
     animation: fade-intro 2s 1s both;
-    font-size: 36px;
+    /* font-size: 36px; */
 }
  
 div.second-intro-caption {
@@ -340,7 +342,7 @@ div.second-intro-caption {
     left: 50%;
     transform: translate(-50%, -50%);
     animation: fade-intro 2s 3s both;
-    font-size: 36px;
+    /* font-size: 36px; */
 }
 
 
@@ -410,6 +412,17 @@ ul:hover a {
       letter-spacing: 0.5px;
   }
 
+
+.talangfallan {
+    background-image: url(/assets/images/IKEA/talangfallan.png);
+    min-width: 60vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0; 
+}   
+  
+
+
 section.ikea-images{   
 min-height: 100vh;
 background-size:60vmax auto;
@@ -419,12 +432,26 @@ background-attachment: fixed;
 }
 
 section.image1{
-    background-image: url(/assets/images/Ikea_Stable_Table_Outside.png);
+    background-image: url(/assets/images/IKEA/Ikea_Stable_Table_Raw_Camera.png);
 }  
 
 section.image2{
-    background-image: url(/assets/images/Ikea_Stable_Table_Raw_Camera.png);
+    background-image: url(/assets/images/IKEA/Ikea_Stable_Table_Outside.png);
 }  
+
+section.image3 {
+    background-image: url(/assets/images/IKEA/warehouse.png);
+}
+
+section.image4 {
+    background-image: url(/assets/images/IKEA/Retail.png);
+}
+
+section.image5 {
+    background-image: url(/assets/images/IKEA/Design.png);
+}
+
+
 
 
 
