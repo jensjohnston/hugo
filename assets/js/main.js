@@ -69,19 +69,4 @@ document.addEventListener("scroll", function () {
   })
 
 
-  const slides = document.querySelector("section div.slides")
-
-  let current = 0
-  let z = 0
-
-  const slideImages = slides.querySelectorAll("img")
-
-  slides.addEventListener("click", function() {
-    z = z + 1
-    current = current + 1
-
-    current = current % slideImages.length
-    
-    slideImages[current].style.zIndex = z
-
-  })
+ 
