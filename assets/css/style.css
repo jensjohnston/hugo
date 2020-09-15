@@ -415,11 +415,24 @@ ul:hover a {
 
 .talangfallan {
     background-image: url(/assets/images/IKEA/talangfallan.png);
-    min-width: 60vh;
+    min-height: 100vh;
+    background-size: 80vmax auto;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-position: center;
-    top: 0; 
+    background-attachment: fixed;  
 }   
+
+.table-ikea {
+    background-image: url(/assets/images/IKEA/table.svg);
+    min-height: 100vh;
+    background-size: 80vmax auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+} 
+
+
+
   
 
 
@@ -476,11 +489,30 @@ section.image5 {
 section.about-split {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+
+div.split {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section div.slides img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 666px;
 }
 
 section div.slides {
+    /* width: 500px;
+    height: 800px; */
     width: 500px;
-    height: 800px;
+    height: 750px;
+    background-color: red;
+    position: relative;
 }
 
 
