@@ -24,6 +24,7 @@ const menuToggle = document.querySelector("a.menu-toggle")
 
 
 menuToggle.addEventListener("click", function () {
+  event.preventDefault();
     bodyTag.classList.toggle("nav-open")
 
     if (bodyTag.classList.contains("nav-open")) {

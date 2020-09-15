@@ -456,7 +456,6 @@ section.image5 {
 
 
 
-
 /*ICA*/
 .sticky {
     padding: 30px;
@@ -464,6 +463,30 @@ section.image5 {
     position: -webkit-sticky;
     top: 0;
 }
+
+
+
+
+
+
+
+
+
+/*About*/
+section.about-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section div.slides {
+    width: 500px;
+    height: 800px;
+}
+
+
+
+
+
 
 @media screen and (min-width: 30em) {
     .shadow-longer-ns img {
