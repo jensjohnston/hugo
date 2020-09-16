@@ -402,6 +402,8 @@ div.second-intro-caption {
 
 .profile-picture img {
     max-height: 100%;
+    width: 500px;
+    height: 650px;
 } 
 
 .title-hero{
@@ -639,7 +641,8 @@ section div.slides {
     /*INDEX*/
 
     .profile-picture img {
-        max-height: 100%;
+        width: 500px;
+        height: 650px;
         padding: 32px;
     } 
 
