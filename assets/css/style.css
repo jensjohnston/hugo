@@ -204,6 +204,7 @@ figcaption {
     z-index: 1;
     text-decoration: none;
     animation: show-hamburger 1s both cubic-bezier(0.68,-0.55,0.27,1.55);  
+    z-index: 1000000000;
   }
 
   .back-button-index a {
