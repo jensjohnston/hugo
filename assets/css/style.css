@@ -196,11 +196,38 @@ figcaption {
   }
 
 
+  /*Logo name*/
+  .back-button a {
+    position: fixed;
+    top: 43px;
+    left: 48px;
+    z-index: 1;
+    text-decoration: none;
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 640px) {
+  
+    .back-button a {
+      position: fixed;
+      top: 19px;
+      left: 16px;
+      z-index: 1;
+      text-decoration: none;
+    }
+    
+    
+   
+  }
+  
+
   /*Navigation*/
 
  a.menu-toggle {
     position: fixed;
-    top: 48px;
+    top: 44px;
     right: 48px;
     z-index: 101;
     display: flex;
@@ -615,7 +642,7 @@ section div.slides {
     }
 
     section.clients {
-        min-height: 50vh;
+        min-height: 100vh;
         display: flex;
         align-items: center;
         background-color: #1b1b1b;
