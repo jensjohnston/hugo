@@ -156,7 +156,7 @@ figcaption {
 
 @media (prefers-reduced-motion: no-preference) {
     section.in-view .profile-picture{
-        animation: show 2s 4s  both cubic-bezier(0.68,-0.55,0.27,1.55);   
+        animation: show 2s 5s  both cubic-bezier(0.68,-0.55,0.27,1.55);   
     }    
 }
 
@@ -203,6 +203,16 @@ figcaption {
     left: 48px;
     z-index: 1;
     text-decoration: none;
+    animation: show-hamburger 1s both cubic-bezier(0.68,-0.55,0.27,1.55);  
+  }
+
+  .back-button-index a {
+    position: fixed;
+    top: 43px;
+    left: 48px;
+    z-index: 1;
+    text-decoration: none;
+    animation: show 2s 6s  both cubic-bezier(0.68,-0.55,0.27,1.55);  
   }
   
   
@@ -217,6 +227,15 @@ figcaption {
       z-index: 1;
       text-decoration: none;
     }
+
+    .back-button-index a {
+        position: fixed;
+        top: 19px;
+        left: 16px;
+        z-index: 1;
+        text-decoration: none;
+        animation: show 2s 6s  both cubic-bezier(0.68,-0.55,0.27,1.55);  
+      }
     
     
    
@@ -235,7 +254,7 @@ figcaption {
     align-items: center;
     text-decoration: none;
     color: var(--white-color);
-    animation: show-hamburger 2s 5s  both cubic-bezier(0.68,-0.55,0.27,1.55);  
+    animation: show-hamburger 2s 6s  both cubic-bezier(0.68,-0.55,0.27,1.55);  
 }
 
  #secondary{
@@ -320,7 +339,7 @@ nav a:hover {
     /* right: 48px;  */
     text-align: center;
     transform: scale(2);
-    animation: show-arrow 2s 5s  both cubic-bezier(0.68,-0.55,0.27,1.55);  
+    animation: show-arrow 2s 6s  both cubic-bezier(0.68,-0.55,0.27,1.55);  
 }
 
 .arrow a {
@@ -351,7 +370,7 @@ div.intro {
 
     pointer-events: none;
     display: flex;
-    animation: intro-box 5s both;
+    animation: intro-box 6s both;
 }
 
 div.first-intro-caption {
@@ -368,7 +387,7 @@ div.second-intro-caption {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: fade-intro 2s 3s both;
+    animation: fade-intro 3s 3s both;
     /* font-size: 36px; */
 }
 
@@ -531,7 +550,7 @@ section div.slides img {
     top: 0;
     left: 0;
     width: 500px;
-    height: 750px;
+    height: 650px;
     box-shadow: 0 0 30px rgba(0,0,0,0.25);
 }
 
