@@ -1,9 +1,9 @@
 :root {
     --white-color: #ffffff;
-    --black-color: #000000;
+    --black-color: #aaaaac;
 }
 
- @keyframes show {
+ /* @keyframes show {
     0% {
         opacity: 0;
         transform: translate(0, 24px) scale(0.95);
@@ -71,7 +71,7 @@
     100% {
         opacity: 0%
     }
-}
+} */
 
 
 
@@ -82,7 +82,7 @@
 
 
 body {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     font-size: 20px;
     line-height: 1.4;
 
@@ -100,9 +100,9 @@ body {
     font-style: italic;
  }
 
- .bold-font {
+ /* .bold-font {
      font-weight: 600;
- }
+ } */
 
 
 div.intro {
